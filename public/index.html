@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Academic Advisor</title>
+    <meta name="description" content="Get personalized elective recommendations from your AI Academic Advisor.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="badge">AI-Powered</div>
+            <h1>Academic Advisor</h1>
+            <p>Tell me about the subjects you've completed and your interests, and I'll recommend the best electives for you.</p>
+        </header>
+
+        <main>
+            <section class="card profile-card">
+                <h2>Your Profile</h2>
+                
+                <div class="form-group">
+                    <label for="completed-courses">Completed Subjects</label>
+                    <div class="custom-select-container">
+                        <select id="completed-courses" multiple>
+                            <!-- Options populated by JS -->
+                        </select>
+                        <p class="help-text">Hold Ctrl/Cmd to select multiple courses you've passed.</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="interests">Current Interests</label>
+                    <textarea id="interests" rows="3" placeholder="e.g., I'm really interested in building smart applications, analyzing data, and understanding user behavior."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="num-recommendations">Number of Recommendations: <span id="num-display">3</span></label>
+                    <input type="range" id="num-recommendations" min="1" max="5" value="3">
+                </div>
+
+                <button id="submit-btn" class="glow-on-hover" type="button">
+                    <span class="btn-text">Get Elective Recommendations</span>
+                    <span class="loader hidden"></span>
+                </button>
+            </section>
+
+            <section class="results-section hidden" id="results-section">
+                <h2>Your Personalized Plan</h2>
+                <div id="recommendations-container" class="recommendations-container">
+                    <!-- Recommendations populated by JS -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
