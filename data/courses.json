@@ -1,0 +1,110 @@
+[
+  {
+    "course_code": "CS101",
+    "course_name": "Introduction to Computer Science",
+    "description": "An introduction to programming and computer science principles using Python.",
+    "prerequisites": [],
+    "domain": "Computer Science",
+    "credits": 3,
+    "course_type": "Core"
+  },
+  {
+    "course_code": "CS102",
+    "course_name": "Data Structures and Algorithms",
+    "description": "Fundamental data structures and algorithms in computer science.",
+    "prerequisites": ["CS101"],
+    "domain": "Computer Science",
+    "credits": 4,
+    "course_type": "Core"
+  },
+  {
+    "course_code": "MATH101",
+    "course_name": "Calculus I",
+    "description": "Limits, derivatives, and integration of functions of a single variable.",
+    "prerequisites": [],
+    "domain": "Mathematics",
+    "credits": 4,
+    "course_type": "Core"
+  },
+  {
+    "course_code": "MATH201",
+    "course_name": "Linear Algebra",
+    "description": "Vector spaces, linear transformations, matrices, and eigenvalues.",
+    "prerequisites": ["MATH101"],
+    "domain": "Mathematics",
+    "credits": 3,
+    "course_type": "Core"
+  },
+  {
+    "course_code": "AI301",
+    "course_name": "Introduction to Artificial Intelligence",
+    "description": "Basic concepts of AI, including search, logic, and simple machine learning.",
+    "prerequisites": ["CS102", "MATH201"],
+    "domain": "Artificial Intelligence",
+    "credits": 4,
+    "course_type": "Core"
+  },
+  {
+    "course_code": "ML401",
+    "course_name": "Machine Learning",
+    "description": "In-depth study of machine learning algorithms, both supervised and unsupervised.",
+    "prerequisites": ["AI301"],
+    "domain": "Artificial Intelligence",
+    "credits": 4,
+    "course_type": "Elective"
+  },
+  {
+    "course_code": "DB201",
+    "course_name": "Database Management Systems",
+    "description": "Relational algebra, SQL, database design, and normalization.",
+    "prerequisites": ["CS101"],
+    "domain": "Data Engineering",
+    "credits": 3,
+    "course_type": "Core"
+  },
+  {
+    "course_code": "SWE301",
+    "course_name": "Software Engineering",
+    "description": "Software development life cycles, agile methodologies, and project management.",
+    "prerequisites": ["CS102"],
+    "domain": "Computer Science",
+    "credits": 3,
+    "course_type": "Elective"
+  },
+  {
+    "course_code": "PSY101",
+    "course_name": "Introduction to Psychology",
+    "description": "Fundamental concepts in psychology, behavior, and human cognition.",
+    "prerequisites": [],
+    "domain": "Social Sciences",
+    "credits": 3,
+    "course_type": "Elective"
+  },
+  {
+    "course_code": "HCI301",
+    "course_name": "Human-Computer Interaction",
+    "description": "Design and evaluation of user interfaces and user experiences.",
+    "prerequisites": ["CS101", "PSY101"],
+    "domain": "Computer Science",
+    "credits": 3,
+    "course_type": "Elective"
+  },
+  {
+    "course_code": "GAME401",
+    "course_name": "Game Development",
+    "description": "Principles of 2D and 3D game design and programming.",
+    "prerequisites": ["CS102"],
+    "domain": "Computer Science",
+    "credits": 3,
+    "course_type": "Elective"
+  },
+  {
+    "course_code": "CYB301",
+    "course_name": "Cybersecurity Fundamentals",
+    "description": "Introduction to network security, cryptography, and ethical hacking.",
+    "prerequisites": ["CS102"],
+    "domain": "Information Security",
+    "credits": 3,
+    "course_type": "Elective"
+  }
+]
